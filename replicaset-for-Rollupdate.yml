@@ -11,6 +11,7 @@ spec:
       name: web-cool
       labels:
         app: myapp
+        type: front-end
     spec:
       containers:
         - name: nginx-container
