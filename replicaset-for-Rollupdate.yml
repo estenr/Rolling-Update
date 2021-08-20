@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: mynew-app
+  name: myapp-newdeploy
   labels:
     app: myapp
     type: front-end
