@@ -20,5 +20,4 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      name: myapp
       type: front-end
