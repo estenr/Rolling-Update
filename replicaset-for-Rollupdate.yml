@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-newdeploy
+  name: myapp-deployment
   labels:
     app: myapp
     type: front-end
 spec:
   template:
     metadata:
-      name: web-cool
+      name: myapp-pod
       labels:
         app: myapp
         type: front-end
@@ -18,7 +18,6 @@ spec:
           image: nginx
   
   replicas: 5
-
   selector:
     matchLabels:
       app: front-end
