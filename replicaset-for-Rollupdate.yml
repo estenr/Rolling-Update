@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-deployment
+  name: mynew-deployment
   labels:
     app: myapp
     type: front-end
@@ -20,4 +20,5 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: front-end
+      name: myapp
+      type: front-end
